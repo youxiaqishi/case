@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+
+	</head>
+	<body>
+  
+	 <!-- 导航条  默认高度50px, 反色（黑色） 固定在顶部 -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <!--当浏览器宽度变窄的时候会显示这个Button按钮，并且会把data-target中的div中ul收缩导航到Button下方-->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <!--定义小按钮的样式-->
+          <span class="sr-only">Toggle navigation</span>
+          <!-- 页面变窄时 ， 按钮的3条横线 -->
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!--Logo位置-->
+        <a class="navbar-brand">
+          <span class="glyphicon glyphicon-home"></span>
+          <strong>陈瑞的博客</strong>
+        </a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <!--导航条内容-->
+          <li><a href="home.html">首页 <span class="sr-only">(current)</span></a></li>
+          <li class="active"><a href="#">JAVA</a></li>
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">PS</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">.NET学习资料<span class="caret"></span></a>
+            <ul class="bs-submenu dropdown-menu" role="menu">
+              <li><a href="#">C#入门经典</a></li>
+              <li><a href="#">ASP.NET 原理</a></li>
+              <li><a href="#">ASP.NET 实例</a></li>
+              <li class="divider"></li>
+              <li><a href="#">C#高级</a></li>
+              <li class="divider"></li>
+              <li><a href="#">ASP.NET MVC</a></li>
+            </ul>
+          </li>
+        </ul>
+         <ul class="nav navbar-nav ">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">联系我们 <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">地址</a></li>
+              <li><a href="#">电话</a></li>
+              <li><a href="#">邮箱</a></li>
+              <li class="divider"></li>
+              <li><a href="#">微信</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!--搜索表单-->
+        <form class="navbar-form navbar-right" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search..."/>
+          </div>
+          <button type="submit" class="btn btn-primary" >搜索</button>
+          <div class="form-group" style="padding-left: 10px; margin: 0px 12px;">
+            <a href="#" style="color: #D2D2D2;">登录</a>
+            <span  style="color: #D2D2D2;padding-left: 5px;">|</span>
+            <a href="#" style="color: #D2D2D2;padding-left: 5px;">注册</a>
+          </div>
+        </form>
+       
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+<!--面包屑导航-->
+<ol class="breadcrumb container" style="margin-top: 60px;">
+  <li><a href="home.html">首页</a></li>
+  <li><a href="#">JAVA</a></li>
+  <li class="active">课程</li>
+</ol>
+
+   <div class="container">
+     <div class="row">
+     	<div class="col-md-4">
+     	<div class="thumbnail">
+	   	 	<a href="Java_1.html">
+          <img src="img/Java入门第一季.jpg" />
+        </a>
+	   	 	<div class="caption">
+	   	 		<h3><a href="Java_1.html">Java入门第一季</a>
+          </h3>
+	   	 		<p>共8课时</p>
+	   	 	</div>
+	   	 </div>
+     	</div>
+     	<div class="col-md-4">
+     	<div class="thumbnail">
+	   	 	<a href="#"><img src="img/Java入门第二季.jpg" />
+        </a>
+	   	 	<div class="caption">
+	   	 		<h3><a href="#">Java入门第二季</a></h3>
+	   	 		<p>共12课时</p>
+	   	 	</div>
+	   	 </div>
+     	</div>
+     	<div class="col-md-4">
+     	<div class="thumbnail">
+	   	 	<a href="#"><img src="img/Java入门第三季.jpg" />
+        </a> 
+	   	 	<div class="caption">
+	   	 		<h3><a href="#">Java入门第一季</a></h3>
+	   	 		<p>共20课时</p>
+	   	 	</div>
+	   	 </div>
+     	</div>
+        <div class="col-md-4">
+     	<div class="thumbnail">
+	   	 	<a href="#"><img src="img/深入浅出Java多线程.jpg" />
+        </a>
+	   	 	<div class="caption">
+	   	 		<h3><a href="#">深入浅出Java多线程</a></h3>
+	   	 		<p>共3课时</p>
+	   	 	</div>
+	   	 </div>
+     	</div>
+        <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="#"><img src="img/Java_Socket.jpg" />
+        </a>
+        <div class="caption">
+          <h3><a href="#">Java_Socket</a></h3>
+          <p>共6课时</p>
+        </div>
+       </div>
+      </div>
+     	    <div class="col-md-4">
+      <div class="thumbnail">
+        <a href="#"><img src="img/Java_IO流.jpg" />
+        </a>
+        <div class="caption">
+          <h3><a href="#">Java_IO流</a></h3>
+          <p>共6课时</p>
+        </div>
+       </div>
+      </div>
+     	    <div class="col-md-10">
+			    <div class="col-md-6">
+			    	<div class="thumbnail">
+				   	 	<a href="#"><img src="img/Java工程师.jpg" />
+              </a>  
+				   	 	<div class="caption">
+				   	 		<h3><a href="#">Java工程师</a></h3>
+				   	 		<p>共2课时</p>
+				   	 	</div>
+				  </div>
+			    </div>
+			    <div class="col-md-6">
+			    	<div class="page-header">
+			    		<h2>Java工程师计划</h2>
+			    	</div>
+			    	<p>想成为Java攻城狮？不知道该如何入门？表捉急，本计划从最基本的Java语言基础、各种常用工具到Java Web基础以及框架应用，迈出成为优秀的Java工程师的重要一步。</p>
+			    </div>
+     	</div>
+     </div>
+
+   <!--footer-->
+    <div class="container" style="
+       font-size: 12px;
+       color: #999;
+       margin: 8px auto;
+       width: 100%;
+       text-align: center;
+       padding: 20px 0;"
+     >
+     Copyright © 2016    <strong><a href="#" target="_blank">陈瑞博客空间</a></strong>&nbsp;
+    <strong><a href="#" target="_blank">www.chenrui.com</a></strong> All Rights Reserved. 备案号：京ICP备XXXX号-1
+    </div>
+
+   </div>
+  </body>
+</html>

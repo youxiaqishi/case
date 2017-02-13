@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		
+		<title></title>
+		<link rel="stylesheet" href="css/bootstrap.min.css" />
+		<script type="text/javascript" src="js/jquery.min.js" ></script>
+		<script type="text/javascript" src="js/bootstrap.min.js" ></script>
+
+	</head>
+	<body>
+  
+	 <!-- 导航条  默认高度50px, 反色（黑色） 固定在顶部 -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <!--当浏览器宽度变窄的时候会显示这个Button按钮，并且会把data-target中的div中ul收缩导航到Button下方-->
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <!--定义小按钮的样式-->
+          <span class="sr-only">Toggle navigation</span>
+          <!-- 页面变窄时 ， 按钮的3条横线 -->
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!--Logo位置-->
+        <a class="navbar-brand">
+          <span class="glyphicon glyphicon-home"></span>
+          <strong>陈瑞的博客</strong>
+        </a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <!--导航条内容-->
+          <li><a href="home.html">首页 <span class="sr-only">(current)</span></a></li>
+          <li class="active"><a href="#">JAVA</a></li>
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">PS</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">.NET学习资料<span class="caret"></span></a>
+            <ul class="bs-submenu dropdown-menu" role="menu">
+              <li><a href="#">C#入门经典</a></li>
+              <li><a href="#">ASP.NET 原理</a></li>
+              <li><a href="#">ASP.NET 实例</a></li>
+              <li class="divider"></li>
+              <li><a href="#">C#高级</a></li>
+              <li class="divider"></li>
+              <li><a href="#">ASP.NET MVC</a></li>
+            </ul>
+          </li>
+        </ul>
+         <ul class="nav navbar-nav ">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">联系我们 <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">地址</a></li>
+              <li><a href="#">电话</a></li>
+              <li><a href="#">邮箱</a></li>
+              <li class="divider"></li>
+              <li><a href="#">微信</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!--搜索表单-->
+        <form class="navbar-form navbar-right" role="search">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Search..."/>
+          </div>
+          <button type="submit" class="btn btn-primary" >搜索</button>
+          <div class="form-group" style="padding-left: 10px; margin: 0px 12px;">
+            <a href="#" style="color: #D2D2D2;">登录</a>
+            <span  style="color: #D2D2D2;padding-left: 5px;">|</span>
+            <a href="#" style="color: #D2D2D2;padding-left: 5px;">注册</a>
+          </div>
+        </form>
+       
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+  </nav>
+
+<!--面包屑导航-->
+<ol class="breadcrumb container" style="margin-top: 60px;">
+  <li><a href="home.html">首页</a></li>
+  <li><a href="Java.html">JAVA</a></li>
+  <li class="active">Java入门第一季</li>
+</ol>
+
+   <div class="container">
+     <div class="row">
+
+
+
+<div class="container">
+   <div class="jumbotron">
+      <h2>欢迎学习Java第一季</h2>
+      <p>在这里将会学到：1、会配置Java开发环境，并使用工具进行程序开发 2、掌握Java中基本语法的使用</p>
+       <div class="progress progress-striped active">
+    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
+      当前学习进度：60%
+    </div>
+  </div>
+      <p><a class="btn btn-primary btn-lg" role="button">
+         Learn More</a>
+      </p>
+   </div>
+</div>
+
+
+
+      </div>
+
+    <!--添加标签页-->
+    <div role="tabpanel">
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"> 第1章变量和常量</a></li>
+        <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">第2章 常用的运算符</a></li>
+        <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">第3章流程控制语句</a></li>
+      </ul>
+      <!-- Tab panes -->
+      <div class="tab-content"  style="margin-top: 30px; font-family: 微软雅黑; font-size:15px ">
+        <div role="tabpanel" class="tab-pane active" id="home">
+          <!--添加文字和图片介绍-->
+            <div class="row">
+            <div class="col-sm-7">
+            标识符就是用于给 Java 程序中变量、类、方法等命名的符号。
+            使用标识符时，需要遵守几条规则：<br />
+
+             1.  标识符可以由字母、数字、下划线（_）、美元符（$）组成，但不能包含             @、%、空格等其它特殊字符，不能以数字开头。譬如：123name 就是不合法滴
+            <br />
+             2.  标识符不能是 Java 关键字和保留字（ Java             预留的关键字，以后的升级版本中有可能作为关键字），但可以包含关键字和保留字。如：不可以使用 void 作为标识符，但是             Myvoid 可以
+             <br />
+             3.  标识符是严格区分大小写的。 所以涅，一定要分清楚 imooc 和 IMooc 是两个不同的标识符哦！
+             <br />
+             4.  标识符的命名最好能反映出其作用，做到见名知意。
+            </div>
+            <div class="col-sm-5">
+              <img src="img/kc1.png" class="img-rounded" />
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="profile">
+          <!--添加文字和图片介绍-->
+          <div class="row">
+            <div class="col-sm-7">运算符是一种“功能”符号，用以通知 Java 进行相关的运算。譬如，我们需要将变量 age 的值设置为 20 ，这时候就需要一个“=”，告诉程序需要进行赋值操作。Java 语言中常用的运算符可分为如下几种：
+            <br/>Ø 算术运算符<br/>Ø 赋值运算符<br/>Ø 比较运算符<br/>Ø 逻辑运算符<br/>Ø 条件运算符</div>
+            <div class="col-sm-5">
+              <img src="img/kc2.png" />
+            </div>
+          </div>
+        </div>
+        <div role="tabpanel" class="tab-pane" id="messages">
+          <!--添加文字和图片介绍-->
+          <div class="row">
+            <div class="col-sm-7">
+                生活中，我们经常需要先做判断，然后才决定是否要做某件事情。例如，如果考试成绩大于 90 分，则奖励一个 IPHONE 5S 。对于这种“需要先判断条件，条件满足后才执行的情况”，就可以使用 if 条件语句实现。<br />
+                1. Java条件语句之 if <br />
+                2. Java条件语句之 if...else <br />
+                3. Java条件语句之多重 if <br />
+                4. Java条件语句之嵌套 if <br />
+            </div>
+            <div class="col-sm-5">
+              <img src="img/kc3.png" class="img-rounded " />
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+
+
+     </div>
+   <!--footer-->
+    <div class="container" style="
+       font-size: 12px;
+       color: #999;
+       margin-top: 30px;
+       width: 100%;
+       text-align: center;
+       padding: 20px 0;"
+     >
+     Copyright © 2016    <strong><a href="#" target="_blank">陈瑞博客空间</a></strong>&nbsp;
+    <strong><a href="#" target="_blank">www.chenrui.com</a></strong> All Rights Reserved. 备案号：京ICP备XXXX号-1
+    </div>
+
+   </div>
+  </body>
+</html>
